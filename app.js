@@ -3,6 +3,8 @@ import cors from "cors"
 import connectiondb from "./database/connection.js"
 import clientesRouter from "./routes/clientes.routes.js"
 
+const PORT = process.env.PORT
+
 let app = express ()
 
 app.use (cors ())
