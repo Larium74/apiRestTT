@@ -89,7 +89,8 @@ export let registrarTarea = (req, res) => {
         if (result) {
             console.log("La tarea se ha registrado exitosamente");
             res.status(200).json({
-                Mensaje: "La tarea se ha registrado exitosamente"
+                Mensaje: "La tarea se ha registrado exitosamente",
+                Cliente_registrado: 1
             });
         }
     })
